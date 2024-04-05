@@ -1,9 +1,6 @@
 import { copy, mkdir, resolvePath } from "./utils.js";
 
-/**
- * @param {string} cwd
- * @param {string} options
- */
+/** @type {import("./types/index.js").create} */
 export async function create(cwd, options) {
 	mkdir(cwd);
 	copy(resolvePath("templates/base"), cwd);
