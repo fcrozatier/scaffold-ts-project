@@ -3,6 +3,7 @@ import * as p from "@clack/prompts";
 import { bold, cyan, grey } from "kleur/colors";
 import fs from "node:fs";
 import path from "node:path";
+import { create } from "./index.js";
 import { packageManager } from "./utils.js";
 
 const { version } = JSON.parse(
@@ -65,7 +66,12 @@ const options = await p.multiselect({
 
 if (p.isCancel(options)) process.exit(1);
 
-// await create(cwd, options);
+await create(cwd, {
+	name: path.basename(path.resolve(cwd)),
+	eslint: options.includes("eslint"),
+	prettier: options.includes("prettier"),
+	vitest: options.includes("vitest"),
+});
 
 p.outro("Your project is ready! 🚀");
 
