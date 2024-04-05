@@ -1,6 +1,6 @@
 {
 	"name": "scaffold-ts-project",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"type": "module",
 	"description": "A CLI for scaffolding your next ts project",
 	"main": "./index.js",
@@ -10,8 +10,12 @@
 		"check": "tsc"
 	},
 	"keywords": [],
-	"author": "",
+	"author": "Frédéric Crozatier",
 	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/fcrozatier/scaffold-ts-project"
+	},
 	"devDependencies": {
 		"@types/node": "^20.12.4",
 		"prettier": "^3.2.5",
@@ -25,6 +29,7 @@
 	"files": [
 		"index.js",
 		"bin.js",
+		"config.js",
 		"utils.js",
 		"types"
 	],
