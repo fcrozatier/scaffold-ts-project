@@ -3,13 +3,11 @@
 	"version": "0.0.3",
 	"type": "module",
 	"description": "A CLI for scaffolding your next ts project",
-	"main": "./build/index.js",
+	"main": "./index.js",
 	"bin": "bin.js",
 	"scripts": {
 		"format": "prettier --write .",
-		"test": "vitest",
-		"build": "tsc",
-		"prepublishOnly": "pnpm build"
+		"check": "tsc"
 	},
 	"keywords": [],
 	"author": "",
