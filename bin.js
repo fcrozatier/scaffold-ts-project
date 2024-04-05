@@ -65,7 +65,7 @@ const options = await p.multiselect({
 
 if (p.isCancel(options)) process.exit(1);
 
-await create(cwd, {
+create(cwd, {
 	name: path.basename(path.resolve(cwd)),
 	eslint: options.includes("eslint"),
 	prettier: options.includes("prettier"),
