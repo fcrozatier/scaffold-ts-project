@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import * as p from "@clack/prompts";
 import { bold, cyan, grey } from "kleur/colors";
 import fs from "node:fs";

@@ -1,9 +1,10 @@
 {
 	"name": "scaffold-ts-project",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"type": "module",
-	"description": "",
+	"description": "A CLI for scaffolding your next ts project",
 	"main": "index.js",
+	"bin": "index.js",
 	"scripts": {
 		"format": "prettier --write .",
 		"test": "vitest",
