@@ -1,5 +1,5 @@
 {
-	"name": "scaffold",
+	"name": "~name~",
 	"version": "0.0.1",
 	"type": "module",
 	"description": "",
@@ -10,6 +10,8 @@
 	"keywords": [],
 	"author": "",
 	"license": "",
-	"devDependencies": {},
+	"devDependencies": {
+		"typescript": "^5.4.4"
+	},
 	"dependencies": {}
 }
