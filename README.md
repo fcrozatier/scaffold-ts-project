@@ -10,7 +10,7 @@ A simple way to kickstart your next ts project _instantly_ and save the scaffold
 ## Get started
 
 ```sh
-npx scaffold-ts-project@latest
+npx scaffold-ts-project@latest my-project-name
 ```
 
 ## Licence
