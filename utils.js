@@ -43,7 +43,6 @@ function get_package_manager() {
 		return undefined;
 	}
 	const user_agent = process.env.npm_config_user_agent;
-	console.log("user_agent:", user_agent);
 	const pm_spec = user_agent.split(" ")[0];
 	const separator_pos = pm_spec?.lastIndexOf("/");
 	const name = pm_spec?.substring(0, separator_pos);
