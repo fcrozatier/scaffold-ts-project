@@ -1,0 +1,2 @@
+# Prettier 3 already ignores files in the .gitignore
+pnpm-lock.yaml

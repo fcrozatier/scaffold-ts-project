@@ -1,12 +1,20 @@
 {
-  "name": "scaffold-ts-project",
-  "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+	"name": "scaffold-ts-project",
+	"version": "0.0.1",
+	"type": "module",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"ts "
+	],
+	"author": "",
+	"license": "MIT",
+	"devDependencies": {
+		"prettier": "^3.2.5",
+		"typescript": "^5.4.4",
+		"vitest": "^1.4.0"
+	}
 }
