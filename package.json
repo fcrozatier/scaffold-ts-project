@@ -1,11 +1,14 @@
 {
 	"name": "scaffold-ts-project",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"type": "module",
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"format": "prettier --write .",
+		"test": "vitest",
+		"build": "tsc",
+		"prepublishOnly": "pnpm build"
 	},
 	"keywords": [
 		"ts "
@@ -13,11 +16,13 @@
 	"author": "",
 	"license": "MIT",
 	"devDependencies": {
+		"@types/node": "^20.12.4",
 		"prettier": "^3.2.5",
 		"typescript": "^5.4.4",
 		"vitest": "^1.4.0"
 	},
 	"dependencies": {
-		"@clack/prompts": "^0.7.0"
+		"@clack/prompts": "^0.7.0",
+		"kleur": "^4.1.5"
 	}
 }
