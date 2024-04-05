@@ -19,7 +19,7 @@ p.intro("Welcome!");
 
 if (cwd === ".") {
 	const dir = await p.text({
-		message: "Where should we create your project?",
+		message: "Where should we create your ts project?",
 		placeholder: "  (hit Enter to use current directory)",
 	});
 
