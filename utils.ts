@@ -1,3 +1,9 @@
+import fs from "node:fs";
+
+export function mkdir(dir: string) {
+	fs.mkdirSync(dir, { recursive: true });
+}
+
 export const packageManager = get_package_manager() ?? "npm";
 
 /**
