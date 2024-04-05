@@ -2,7 +2,7 @@ import * as p from "@clack/prompts";
 import { bold, cyan, grey } from "kleur/colors";
 import fs from "node:fs";
 import path from "node:path";
-import { package_manager } from "./utils.js";
+import { packageManager } from "./utils.js";
 
 const { version } = JSON.parse(
 	fs.readFileSync(new URL("package.json", import.meta.url), "utf-8"),
@@ -91,7 +91,7 @@ if (relative !== "") {
 	console.log(`  ${i++}: ${bold(cyan(`cd ${relative}`))}`);
 }
 
-console.log(`  ${i++}: ${bold(cyan(`${package_manager} install`))}`);
+console.log(`  ${i++}: ${bold(cyan(`${packageManager} install`))}`);
 console.log(
 	`  ${i++}: ${bold(cyan('git init && git add -A && git commit -m "Initial commit"'))} (optional)`,
 );
