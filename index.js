@@ -6,6 +6,7 @@ import { copy, mkdir, resolvePath } from "./utils.js";
 export function create(cwd, options) {
 	mkdir(cwd);
 	copy(resolvePath("templates/base"), cwd);
+	fs.renameSync(cwd + "/gitignore", cwd + "/.gitignore");
 
 	const packages = JSON.parse(fs.readFileSync(cwd + "/package.json", "utf-8"));
 	packages.name = options.name;
