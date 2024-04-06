@@ -81,7 +81,7 @@ if (options.includes("eslint")) {
 
 if (options.includes("prettier")) {
 	console.log(bold("✔ Prettier"));
-	console.log(cyan("  https://prettier.io/docs/en/options.html"));
+	console.log(cyan("  https://prettier.io/docs/en/options.html\n"));
 }
 
 if (options.includes("vitest")) {
@@ -97,9 +97,9 @@ if (relative !== "") {
 	console.log(`  ${i++}: ${bold(cyan(`cd ${relative}`))}`);
 }
 
-console.log(`  ${i++}: ${bold(cyan(`npm install`))} (or pnpm etc.)`);
+console.log(`  ${i++}: ${bold(cyan(`pnpm install`))}`);
 if (options.includes("prettier")) {
-	console.log(`  ${i++}: ${bold(cyan(`npm run format`))}`);
+	console.log(`  ${i++}: ${bold(cyan(`pnpm format`))}`);
 }
 console.log(
 	`  ${i++}: ${bold(cyan('git init && git add -A && git commit -m "Initial commit"'))} (optional)`,
