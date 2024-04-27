@@ -17,10 +17,11 @@
 		"url": "https://github.com/fcrozatier/scaffold-ts-project"
 	},
 	"devDependencies": {
+		"@changesets/cli": "^2.27.1",
 		"@types/node": "^20.12.4",
 		"prettier": "^3.2.5",
 		"typescript": "^5.4.4",
-		"vitest": "^1.4.0"
+		"vitest": "^1.5.0"
 	},
 	"dependencies": {
 		"@clack/prompts": "^0.7.0",
