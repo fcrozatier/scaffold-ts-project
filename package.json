@@ -1,13 +1,14 @@
 {
 	"name": "scaffold-ts-project",
-	"version": "0.0.12",
+	"version": "0.1.0",
 	"type": "module",
 	"description": "A CLI for scaffolding your next ts project",
 	"main": "./index.js",
 	"bin": "bin.js",
 	"scripts": {
 		"format": "prettier --write .",
-		"check": "tsc"
+		"check": "tsc",
+		"release": "changeset publish"
 	},
 	"keywords": [],
 	"author": "Frédéric Crozatier",
