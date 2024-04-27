@@ -1,5 +1,5 @@
 export const versions = {
-	vitest: "^1.4.0",
+	vitest: "^1.5.2",
 	prettier: "^3.2.5",
 	eslint: "^8.57.0",
 	"@typescript-eslint/eslint-plugin": "^6.18.1",

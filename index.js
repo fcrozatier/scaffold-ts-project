@@ -1,6 +1,6 @@
 import fs from "node:fs";
-import { versions } from "./config.js";
 import { copy, mkdir, resolvePath } from "./utils.js";
+import { versions } from "./versions.js";
 
 /** @type {import("./types/index.js").create} */
 export function create(cwd, options) {
