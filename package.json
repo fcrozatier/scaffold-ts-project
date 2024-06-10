@@ -8,7 +8,8 @@
 	"scripts": {
 		"format": "prettier --write .",
 		"check": "tsc",
-		"release": "changeset publish"
+		"release": "changeset publish",
+		"postrelease": "git push --follow-tags"
 	},
 	"keywords": [],
 	"author": "Frédéric Crozatier",
