@@ -1,5 +1,8 @@
 {
 	"compilerOptions": {
+		/* Language and Environment */
+		"target": "ESNext",
+
 		/* Modules */
 		"module": "NodeNext",
 		"resolveJsonModule": true,
