@@ -5,13 +5,16 @@
 	"description": "",
 	"main": "./build/index.js",
 	"scripts": {
-		"build": "tsc"
+		"build": "tsc",
+		"release": "changeset publish",
+		"postrelease": "git push --follow-tags"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "",
 	"devDependencies": {
-		"typescript": "^5.4.5"
+		"typescript": "^5.4.5",
+		"@changesets/cli": "^2.27.1"
 	},
 	"dependencies": {}
 }
