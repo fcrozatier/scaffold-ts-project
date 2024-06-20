@@ -8,8 +8,7 @@
 	"scripts": {
 		"format": "prettier --write .",
 		"check": "tsc",
-		"release": "changeset publish",
-		"postrelease": "git push --follow-tags"
+		"postpublish": "git push --follow-tags"
 	},
 	"keywords": [],
 	"author": "Frédéric Crozatier",
@@ -19,7 +18,6 @@
 		"url": "https://github.com/fcrozatier/scaffold-ts-project"
 	},
 	"devDependencies": {
-		"@changesets/cli": "^2.27.1",
 		"@types/node": "^20.12.4",
 		"prettier": "^3.2.5",
 		"typescript": "^5.4.4",
