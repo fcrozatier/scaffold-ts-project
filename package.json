@@ -1,6 +1,6 @@
 {
 	"name": "scaffold-ts-project",
-	"version": "0.3.0",
+	"version": "1.0.0",
 	"type": "module",
 	"description": "A CLI for scaffolding your next ts project",
 	"main": "./index.js",
